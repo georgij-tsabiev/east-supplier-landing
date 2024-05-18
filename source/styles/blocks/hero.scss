@@ -1,0 +1,110 @@
+.hero {
+  background-color: $main-color;
+}
+
+.hero__description {
+  margin: 0 0 30px;
+}
+
+.hero__title {
+  margin: 0 0 25px;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.25;
+  color: $white-color;
+}
+
+.hero__text {
+  margin: 0 0 19px;
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: $white-color;
+}
+
+.hero__link {
+  margin: 0;
+  padding: 7px 0;
+  display: inline-block;
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.5;
+  color: $white-color;
+  text-decoration: underline;
+  text-decoration-color: $accent-color;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}
+
+.hero__image {
+  width: 100%;
+  display: block;
+}
+
+.hero__additional-text {
+  display: none;
+}
+
+/* Планшет */
+@media (min-width: $tablet-width) {
+  .hero {
+    background-color: $white-color;
+  }
+
+  .hero__description {
+    margin: 0 0 53px;
+    max-width: 528px;
+  }
+
+  .hero__image-wrapper {
+    z-index: 1;
+    position: relative;
+  }
+
+  .hero__additional-text {
+    display: block;
+  }
+
+  .hero__title {
+    margin: 0 0 30px;
+    font-size: 44px;
+    color: $headings-color;
+  }
+
+  .hero__text {
+    margin: 0 0 46px;
+    font-size: 16px;
+    color: $text-color;
+  }
+
+  .hero__link {
+    font-size: 16px;
+    color: $headings-color;
+  }
+}
+
+/* Десктоп */
+@media (min-width: $desktop-width) {
+  .hero {
+    display: flex;
+    gap: 9px;
+    flex-wrap: wrap;
+  }
+
+  .hero__title {
+    font-size: 52px;
+  }
+
+  .hero__description {
+    padding: 80px 0 0;
+    max-width: 596px;
+  }
+
+  .hero__text {
+    margin: 0 0 26px;
+    max-width: 535px;
+  }
+}

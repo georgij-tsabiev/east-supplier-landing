@@ -1,0 +1,11 @@
+.logo {
+  display: inline-block;
+}
+
+/* Десктоп */
+@media (min-width: $desktop-width) {
+  .logo__image {
+    width: 104px;
+    height: 57px;
+  }
+}

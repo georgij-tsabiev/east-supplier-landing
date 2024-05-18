@@ -1,3 +1,46 @@
 .header {
-  padding: 10px 15px;
+  position: relative;
+  padding: 14px 15px;
+  background-color: $main-color;
+}
+
+.header__top {
+  margin: 0 0 14px;
+}
+
+/* Планшет */
+@media (min-width: $tablet-width) {
+  .header {
+    padding: 16px 39px 0;
+    background-color: $white-color;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 23%;
+      min-height: 100%;
+      background-color: $main-color;
+    }
+  }
+
+  .header__top {
+    margin: 0 0 16px;
+  }
+}
+
+/* Десктоп */
+@media (min-width: $desktop-width) {
+  .header {
+    padding: 25px 39px 0;
+
+    &::before {
+      width: 41.5%;
+    }
+  }
+
+  .header__top {
+    margin: 0 0 24px;
+  }
 }
