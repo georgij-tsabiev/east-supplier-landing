@@ -1,0 +1,52 @@
+.radio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-list__item {
+  padding: 24px 24px 32px 56px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.12);
+}
+
+.radio-list__title {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $headings-color;
+}
+
+.radio-list__text {
+  font-family: $second-family;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $text-color;
+}
+
+.radio-list__control {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.radio-list__field:checked + .radio-list__outline::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  background-color: #0b7572;
+}
+
+/* Планшет */
+@media (min-width: $tablet-width) {
+  .radio-list__item {
+    padding: 40px 128px 48px 96px;
+  }
+}
