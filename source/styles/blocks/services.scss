@@ -1,0 +1,139 @@
+.services {
+  margin-top: -138px;
+  padding: 0 15px;
+  position: relative;
+}
+
+.services__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 27px 32px 32px;
+  background-color: $white-color;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+.services__item {
+  position: relative;
+  padding: 84px 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    background-color: #e9e9ec;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.services__item--building::before {
+  background-image: url("../../icons/stack.svg#building-icon");
+  background-size: 40px 40px;
+}
+
+.services__item--vehicle::before {
+  background-image: url("../../icons/stack.svg#vehicle-icon");
+  background-size: 35px 37px;
+}
+
+.services__item--delivery::before {
+  background-image: url("../../icons/stack.svg#delivery-icon");
+  background-size: 49px 29px;
+}
+
+.services__title {
+  margin: 0 0 12px;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.35;
+  color: $headings-color;
+}
+
+.services__text {
+  margin: 0;
+  font-family: $second-family;
+  font-size: 15px;
+  line-height: 1.5;
+  color: $text-color;
+}
+
+/* Планшет */
+@media (min-width: $tablet-width) {
+  .services {
+    margin-top: 0;
+    position: static;
+  }
+
+  .services__menu {
+    box-shadow: none;
+    gap: 16px;
+  }
+
+  .services__item {
+    padding: 32px 140px 40px 156px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+
+    &::before {
+      width: 92px;
+      height: 92px;
+      top: 32px;
+      left: 32px;
+    }
+  }
+
+  .services__item--building::before {
+    background-size: 50px 50px;
+  }
+
+  .services__item--vehicle::before {
+    background-size: 47px 50px;
+  }
+
+  .services__item--delivery::before {
+    background-size: 66px 39px;
+  }
+}
+
+/* Десктоп */
+@media (min-width: $desktop-width) {
+  .services {
+    margin-top: -100px;
+    position: relative;
+  }
+
+  .services__menu {
+    padding: 40px 0;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .services__item {
+    padding: 116px 105px 0 80px;
+    box-shadow: none;
+
+    &::before {
+      top: 0;
+      left: 80px;
+    }
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      border: 1px solid #d7d7dd;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 261px;
+    }
+  }
+}

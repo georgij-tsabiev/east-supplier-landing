@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  padding: 14px 15px;
+  padding: 14px 15px 181px;
   background-color: $main-color;
 }
 
@@ -33,7 +33,7 @@
 /* Десктоп */
 @media (min-width: $desktop-width) {
   .header {
-    padding: 25px 39px 0;
+    padding: 25px 39px 173px;
 
     &::before {
       width: 41.5%;
