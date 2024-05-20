@@ -1,0 +1,47 @@
+.card {
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+
+  &:not(:first-child) {
+    display: none;
+  }
+}
+
+.card__image {
+  display: block;
+}
+
+.card__description-wrapper {
+  padding: 24px;
+}
+
+.card__title {
+  margin: 0 0 16px;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.35;
+  color: $headings-color;
+}
+
+.card__text {
+  margin: 0 0 24px;
+  font-family: $second-family;
+  font-size: 15px;
+  line-height: 1.5;
+  color: $text-color;
+}
+
+/* Планшет */
+@media (min-width: $tablet-width) {
+  .card:nth-child(2) {
+    display: block;
+  }
+}
+
+/* Десктоп */
+@media (min-width: $desktop-width) {
+  .card:nth-child(3) {
+    display: block;
+  }
+}
