@@ -1,0 +1,60 @@
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.advantages-list__title {
+  margin: 0 0 12px;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.35;
+  color: $headings-color;
+}
+
+.advantages-list__item {
+  padding-left: 68px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    background-color: #e9e9ec;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantages-list__item--lock::before {
+  background-image: url("../../icons/lock-icon.svg");
+  background-size: 29px 31px;
+}
+
+.advantages-list__item--dollar::before {
+  background-image: url("../../icons/dollar-icon.svg");
+  background-size: 29px 29px;
+}
+
+.advantages-list__item--schedule::before {
+  background-image: url("../../icons/schedule-icon.svg");
+  background-size: 26px 33px;
+}
+
+.advantages-list__item--location::before {
+  background-image: url("../../icons/location-icon.svg");
+  background-size: 29px 32px;
+}
+
+.advantages-list__text {
+  margin: 0;
+  font-family: $second-family;
+  font-size: 15px;
+  line-height: 1.5;
+  color: $text-color;
+}
