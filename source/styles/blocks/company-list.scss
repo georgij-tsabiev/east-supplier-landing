@@ -1,0 +1,40 @@
+.company-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 48px;
+}
+
+.company-list__item {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  &:nth-child(2n + 1) {
+    border-right: 1px solid #d7d7dd;
+  }
+}
+
+.company-list__image {
+  margin: 0 auto 24px;
+  min-height: 88px;
+  display: block;
+}
+
+.company-list__title {
+  margin: 0 0 12px;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.35;
+  text-align: center;
+  color: $headings-color;
+}
+
+.company-list__text {
+  margin: 0;
+  font-family: $second-family;
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  color: $text-color;
+}
