@@ -1,0 +1,44 @@
+.contact-list {
+  margin: 0 0 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.contact-list__item {
+  padding: 0 0 0 64px;
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 15px;
+  color: $text-color;
+  background-repeat: no-repeat;
+
+  &--phone {
+    background-image: url("../../icons/stack.svg#phone-icon");
+    background-size: 24px 33px;
+  }
+
+  &--email {
+    background-image: url("../../icons/stack.svg#email-icon");
+    background-size: 32px 20px;
+  }
+
+  &--whatsapp {
+    background-image: url("../../icons/stack.svg#whatsapp-icon");
+    background-size: 32px 32px;
+  }
+
+  &--skype {
+    background-image: url("../../icons/stack.svg#skype-icon");
+    background-size: 32px 32px;
+  }
+}
+
+.contact-list__link {
+  margin: 6px 0 0;
+  display: block;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 20px;
+  color: $headings-color;
+}
