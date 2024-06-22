@@ -4,4 +4,8 @@
   font-size: 28px;
   line-height: 1.25;
   color: $headings-color;
+
+  &--light {
+    color: $white-color;
+  }
 }

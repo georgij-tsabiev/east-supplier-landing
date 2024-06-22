@@ -1,0 +1,27 @@
+.form__label {
+  padding: 19px 38px;
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.25;
+  color: $white-color;
+  background-repeat: no-repeat;
+  background-position: left;
+
+  &--file {
+    background-image: url("../../icons/stack.svg#file-icon");
+    background-size: 21px 19px;
+  }
+
+  &--image {
+    background-image: url("../../icons/stack.svg#file-image-icon");
+    background-size: 20px 19px;
+  }
+}
+
+.form__button {
+  margin-top: 71px;
+  width: 100%;
+}

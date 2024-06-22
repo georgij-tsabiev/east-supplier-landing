@@ -350,14 +350,18 @@
         </div>
       </section>
       <section class="contact-form">
-        <div class="container">
+        <div class="contact-form__wrapper container">
           <h2 class="title title--light">Свяжитесь с нами</h2>
           <form class="form" action="https://echo.htmlacademy.ru/" method="get">
             <textarea class="field form__field customer-task-field" name="customer-task" placeholder="Опишите задачу..."></textarea>
-            <input class="field field--file form__field" type="file" name="technical-task" id="technical-task">
-            <label class="form__label" for="technical-task">Прикрипите ТЗ</label>
-            <input class="field field--image form__field" type="file" accept="image/png, image/jpeg" name="product-image" id="product-image">
-            <label class="form__label" for="product-image">product-image</label>
+            <label class="form__label form__label--file" for="technical-task">
+              Прикрипите ТЗ
+              <input class="field field--file form__field" type="file" name="technical-task" id="technical-task">
+            </label>
+            <label class="form__label form__label--image" for="product-image">
+              Добавьте фото товара
+              <input class="field field--image form__field" type="file" accept="image/png, image/jpeg" name="product-image" id="product-image">
+            </label>
             <button class="button form__button button--light" type="submit">Отправить заявку</button>
           </form>
         </div>

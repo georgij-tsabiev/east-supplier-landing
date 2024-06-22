@@ -1,0 +1,22 @@
+.button {
+  padding: 13px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+  border-radius: 4px;
+
+  &--dark {
+    color: $white-color;
+    background-color: $main-color;
+  }
+
+  &--light {
+    color: #0b7572;
+    background-color: $white-color;
+  }
+}
