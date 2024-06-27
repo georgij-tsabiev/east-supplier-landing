@@ -1,4 +1,18 @@
+.table {
+  background-color: $light-block-color;
+  border-spacing: 0;
+}
+
 .table__header {
+  padding: 7px 16px;
+  background-color: $main-color;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.5;
+  color: $white-color;
+  border-radius: 2px;
+
   @media (max-width: 767px) {
     display: flex;
   }
@@ -14,8 +28,10 @@
 
 .table__row {
   @media (max-width: 767px) {
+    padding: 18px 16px 32px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 90px 1fr;
+    gap: 0 16px;
 
     &:not(:nth-child(2)) {
       display: none;
@@ -24,19 +40,90 @@
 }
 
 .table__cell {
+  padding: 0;
+
+  &:not(:last-child) {
+    padding-bottom: 24px;
+  }
+
   @media (max-width: 767px) {
     &--image {
       grid-column: 1;
     }
 
     &--price {
-      grid-column: 2;
+      grid-column: 2 / -1;
       grid-row: 1;
+    }
+
+    &--address {
+      grid-column: 1 / -1;
     }
 
     &--contact {
       grid-row: 3;
-      grid-column: 1;
+      grid-column: 1 / -1;
     }
   }
+}
+
+.table__name {
+  margin: 0 0 12px;
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  color: $text-color;
+}
+
+.table__price {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  color: $headings-color;
+}
+
+.table__manufacturer {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.35;
+  color: $headings-color;
+}
+
+.table__address {
+  font-style: normal;
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  color: $text-color;
+}
+
+.table__contact-name {
+  display: inline-block;
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.35;
+  color: $headings-color;
+}
+
+.table__contact-job {
+  display: inline-block;
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  color: $text-color;
+}
+
+.table__contact-phone {
+  display: inline-block;
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  color: $headings-color;
 }
