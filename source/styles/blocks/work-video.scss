@@ -1,0 +1,38 @@
+.work-video {
+  padding: 0 15px 44px;
+}
+
+.work-video__text {
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: $text-color;
+}
+
+.work-video__link {
+  display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../../icons/stack.svg#play-icon");
+    transition: 0.3s linear;
+  }
+
+  &:hover::before {
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: 0.3s linear;
+  }
+}
+
+.work-video__image {
+  width: 100%;
+  object-fit: cover;
+}
