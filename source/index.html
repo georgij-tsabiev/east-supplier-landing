@@ -126,7 +126,14 @@
           <p class="works__text">Мы собрали информацию по грузам, которые мы уже доставили. У нас специальный подход к каждому виду товаров.</p>
           <ul class="works-list reset-list">
             <li class="card">
-              <img class="card__image" src="images/machines-and-equipment-mobile@1x.png" width="345" height="222" alt="Кран с контейнерами.">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="images/machines-and-equipment-desktop@1x.webp, images/machines-and-equipment-desktop@2x.webp 2x" width="393" height="247">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/machines-and-equipment-tablet@1x.webp, images/machines-and-equipment-tablet@2x.webp 2x" width="690" height="247">
+                <source type="image/webp" srcset="images/machines-and-equipment-mobile@1x.webp, images/machines-and-equipment-mobile@2x.webp 2x" width="345" height="222">
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/machines-and-equipment-desktop@1x.png, images/machines-and-equipment-desktop@2x.png 2x" width="393" height="247">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/machines-and-equipment-tablet@1x.png, images/machines-and-equipment-tablet@2x.png 2x" width="690" height="247">
+                <img class="card__image" src="images/machines-and-equipment-mobile@1x.png" srcset="images/machines-and-equipment-mobile@2x.png 2x" width="345" height="222" alt="Кран с контейнерами.">
+              </picture>
               <div class="card__description-wrapper">
                 <h3 class="card__title">Станки и оборудование</h3>
                 <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
@@ -134,16 +141,25 @@
               </div>
             </li>
             <li class="card">
-              <img class="card__image" src="#" width="690" height="247" alt="Погрузка в грузовик.">
-              <h3 class="card__title">Компоненты и запчасти</h3>
-              <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
-              <span class="price">18 000 руб.</span>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="images/components-and-spares-desktop@1x.webp, images/components-and-spares-desktop@2x.webp 2x" width="393" height="247">
+                <source type="image/webp" srcset="images/components-and-spares-tablet@1x.webp, images/components-and-spares-tablet@2x.webp 2x" width="690" height="247">
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/components-and-spares-desktop@1x.png, images/components-and-spares-desktop@2x.png 2x" width="393" height="247">
+                <img class="card__image" src="images/components-and-spares-tablet@1x.png" srcset="images/components-and-spares-tablet@2x.png 2x" width="690" height="247" alt="Погрузка в грузовик.">
+              </picture>
+              <div class="card__description-wrapper">
+                <h3 class="card__title">Компоненты и запчасти</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
+                <span class="price">18 000 руб.</span>
+              </div>
             </li>
             <li class="card">
               <img class="card__image" src="#" width="393" height="247" alt="Грузовик на фоне корабля.">
-              <h3 class="card__title">Станки и оборудование</h3>
-              <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
-              <span class="price">20 000 руб.</span>
+              <div class="card__description-wrapper">
+                <h3 class="card__title">Станки и оборудование</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
+                <span class="price">20 000 руб.</span>
+              </div>
             </li>
           </ul>
           <ul class="pagination reset-list">

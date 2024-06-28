@@ -1,0 +1,7 @@
+.works-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
