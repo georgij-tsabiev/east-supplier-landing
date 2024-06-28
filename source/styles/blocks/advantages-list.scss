@@ -1,3 +1,30 @@
+.advantages__title {
+  @media (min-width: $tablet-width) {
+    font-size: 44px;
+    padding: 130px 380px 154px 40px;
+    position: relative;
+    background-image: url("../../images/advantages-background@1x.png"), url("../../images/advantages-bg-tablet@1x.png");
+    background-repeat: no-repeat no-repeat;
+    background-position: left right;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/advantages-background@2x.png"), url("../../images/advantages-bg-tablet@2x.png");
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 101px;
+      height: 16px;
+      top: 86px;
+      left: 174px;
+      background-image: url("../../icons/stack.svg#advantages-arrow-icon");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
 .advantages-list {
   display: flex;
   flex-direction: column;
