@@ -1,3 +1,22 @@
+.about {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .about__text {
+  margin: 0;
   display: none;
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.5;
+  color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
