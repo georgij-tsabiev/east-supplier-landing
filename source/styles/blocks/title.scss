@@ -8,4 +8,8 @@
   &--light {
     color: $white-color;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 44px;
+  }
 }

@@ -1,34 +1,12 @@
-.advantages__title {
-  @media (min-width: $tablet-width) {
-    font-size: 44px;
-    padding: 130px 380px 154px 40px;
-    position: relative;
-    background-image: url("../../images/advantages-background@1x.png"), url("../../images/advantages-bg-tablet@1x.png");
-    background-repeat: no-repeat no-repeat;
-    background-position: left right;
-    background-size: cover;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/advantages-background@2x.png"), url("../../images/advantages-bg-tablet@2x.png");
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 101px;
-      height: 16px;
-      top: 86px;
-      left: 174px;
-      background-image: url("../../icons/stack.svg#advantages-arrow-icon");
-      background-repeat: no-repeat;
-    }
-  }
-}
-
 .advantages-list {
   display: flex;
   flex-direction: column;
   gap: 38px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 530px;
+    gap: 48px;
+  }
 }
 
 .advantages-list__title {
@@ -38,11 +16,19 @@
   font-size: 18px;
   line-height: 1.35;
   color: $headings-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .advantages-list__item {
   padding-left: 68px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 136px;
+  }
 
   &::before {
     content: "";
@@ -55,27 +41,48 @@
     background-color: #e9e9ec;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 88px;
+      height: 88px;
+    }
   }
 }
 
 .advantages-list__item--lock::before {
   background-image: url("../../icons/lock-icon.svg");
   background-size: 29px 31px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 49px 51px;
+  }
 }
 
 .advantages-list__item--dollar::before {
   background-image: url("../../icons/dollar-icon.svg");
   background-size: 29px 29px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 49px 49px;
+  }
 }
 
 .advantages-list__item--schedule::before {
   background-image: url("../../icons/schedule-icon.svg");
   background-size: 26px 33px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 43px 55px;
+  }
 }
 
 .advantages-list__item--location::before {
   background-image: url("../../icons/location-icon.svg");
   background-size: 29px 32px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 49px 54px;
+  }
 }
 
 .advantages-list__text {
@@ -84,4 +91,8 @@
   font-size: 15px;
   line-height: 1.5;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
