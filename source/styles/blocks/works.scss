@@ -1,5 +1,10 @@
 .works {
   padding: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    margin: 0 0 88px;
+  }
 }
 
 .works__text {
@@ -7,4 +12,8 @@
   font-size: 15px;
   line-height: 1.5;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
